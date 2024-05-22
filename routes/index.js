@@ -32,8 +32,8 @@ router.get("/user-details",authToken,userDetailsController)
 router.get("/userLogout",userLogout)
 
 //admin panel 
-router.get("/all-user",authToken,allUsers)
-router.post("/update-user",authToken,updateUser)
+router.get("/all-user",allUsers)
+router.post("/update-user",updateUser)
 
 //product
 router.post("/upload-product",authToken,UploadProductController)
